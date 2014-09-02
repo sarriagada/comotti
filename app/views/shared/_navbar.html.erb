@@ -1,18 +1,5 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <ul class='nav navbar'>
-      <li class=<%= 'active' if current_page?(action: :index)%> >
-        <%= link_to 'inicio', root_path %>
-      </li>
-      <li class=<%= 'active' if current_page?(action: :products)%> >
-        <%= link_to 'productos', products_path %>
-      </li>
-      <li class=<%= 'active' if current_page?(action: :promos)%> >
-        <%= link_to 'promociones', promos_path %>
-      </li>
-      <li class=<%= 'active' if current_page?(action: :contact)%> >
-        <%= link_to 'contacto', contact_path %>
-      </li>
-    </ul>
-  </div>
-</nav>
+<% if controller.controller_name == 'site' %>
+  <%= render 'shared/navbar_client' %>
+<% else %>
+  <%= render 'shared/navbar_admin' %>
+<% end %>
