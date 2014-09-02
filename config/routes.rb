@@ -1,8 +1,8 @@
 Comotti::Application.routes.draw do
   root 'site#index'
-  get 'productos' => 'site#productos'
-  get 'promociones' => 'site#promociones'
-  get 'contacto' => 'site#contacto'
+  get 'productos' => 'site#products', as: :products
+  get 'promociones' => 'site#promos', as: :promos
+  get 'contacto' => 'site#contact', as: :contact
   namespace :admin do
     resources :products
     resources :promos
