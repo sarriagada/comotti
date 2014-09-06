@@ -12,6 +12,8 @@ gem 'less-rails'
 gem 'twitter-bootstrap-rails'
 gem 'carrierwave'
 gem 'devise'
+gem 'inherited_resources'
+gem 'rails_admin'
 
 group :doc do
   gem 'sdoc', require: false

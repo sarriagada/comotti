@@ -1,1 +1,12 @@
 <h1>Promociones</h1>
+<ul>
+  <% @promos.each do |promo| %>
+    <li>
+      <strong><%= promo.title %></strong>
+      <br>
+      <span>$<%= promo.price %></span>
+      <br>
+      <p><%= promo.description %></p>
+    </li>
+  <% end %>
+</ul>

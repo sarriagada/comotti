@@ -1,1 +1,14 @@
 <h1>Productos</h1>
+<ul>
+  <% @products.each do |product| %>
+    <li>
+      <strong><%= product.title %></strong>
+      <br>
+      <%= image_tag(product.photo.url, size: '100') if product.photo %>
+      <br>
+      <span>$<%= product.price %></span>
+      <br>
+      <p><%= product.description %></p>
+    </li>
+  <% end %>
+</ul>
