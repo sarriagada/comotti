@@ -15,7 +15,7 @@ gem 'devise'
 gem 'inherited_resources'
 gem 'rails_admin'
 
-group :production
+group :production do
   gem 'pg'
 end
 
