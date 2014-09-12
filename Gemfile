@@ -15,10 +15,6 @@ gem 'devise'
 gem 'inherited_resources'
 gem 'rails_admin'
 
-group :production do
-  gem 'pg'
-end
-
 group :doc do
   gem 'sdoc', require: false
 end
