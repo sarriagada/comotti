@@ -18,3 +18,9 @@ gem 'rails_admin'
 group :doc do
   gem 'sdoc', require: false
 end
+
+group :development do
+  gem 'capistrano-rails'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rvm'
+end
